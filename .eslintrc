@@ -1,0 +1,29 @@
+{
+  "extends": ["eslint:recommended", "standard", "standard-jsx"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "15.6.1"
+    }
+  },
+  "rules": {
+    "jsx-quotes": ["error", "prefer-double"],
+    "react/jsx-curly-spacing": [2, {
+      "when": "always",
+      "spacing": {
+        "objectLiterals": "never"
+      }
+    }],
+    "react/no-unknown-property": [2],
+    "padded-blocks": ["error", { "classes": "always" }]
+  }
+}
